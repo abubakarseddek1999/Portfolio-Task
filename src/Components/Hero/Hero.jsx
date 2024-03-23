@@ -14,7 +14,7 @@ const Hero = () => {
     console.log(heroData);
     return (
 
-        <div className=" flex flex-col md:flex-row mt-10 p-2 ">
+        <div className=" flex justify-between flex-col md:flex-row mt-10 p-2 ">
             
             <div className="md:w-1/2 w-full flex flex-col justify-center items-center">
 
@@ -38,16 +38,17 @@ const Hero = () => {
 
                     {/* dsc of user */}
                     <div className="mt-6">
-                        <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50">
+                        <button className="bg-[#2f9fae] text-white px-4 py-2 rounded-md hover:bg-[#183033] focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50">
                             DOWNLOAD CV
                         </button>
                         <div className="flex items-center mt-4">
-                            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <div className="w-8 h-8 bg-[#2e8d99] rounded-full flex items-center justify-center">
+                                
                             </div>
-                            <p className="ml-2 text-gray-600 dark:text-gray-300">{heroData.exp_year} YEARS OF EXPERIENCE</p>
+                            <p className="ml-2 text-gray-600 dark:text-gray-300">{heroData?.exp_year} YEARS OF EXPERIENCE</p>
                         </div>
                         <div className="flex items-center mt-2">
-                            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <div className="w-8 h-8 bg-[#2e8d99] rounded-full flex items-center justify-center">
                                 
                             </div>
                             <p className="ml-2 text-gray-600 dark:text-gray-300">{heroData?.some_total} COMPLETED PROJECTS</p>
@@ -57,15 +58,10 @@ const Hero = () => {
             </div>
 
             {/* image  */}
-            <div className="hidden md:flex w-1/2">
-                <img src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k" alt="John Doe" className="w-full h-full object-cover md:rounded-full md:max-w-[550px]" />
+            <div className="hidden md:flex justify-end w-1/2">
+                <img src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k" alt="John Doe" className="w-full h-full object-cove p-2 md:rounded-full md:max-w-[550px]" />
             </div>
         </div>
-
-
-
-
-
 
     );
 };
