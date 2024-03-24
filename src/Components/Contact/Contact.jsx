@@ -12,23 +12,23 @@ const Contact = () => {
             {/* Contact info */}
             <div className="flex flex-col lg:flex-row gap-5 p-2 justify-center items-center">
                 <div className="p-2 grid grid-cols-1 md:grid-cols-2 gap-10  ">
-                    <div className="p-5 w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md ">
+                    <div className="p-5 w-full md:w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md ">
                         <HiMiniBuildingOffice2 className="text-5xl text-[#89D8E3] mb-2" />
                         <p className="text-xl font-bold ">Our Main Office</p>
                         <p>SoHo 94 Broadway St New York, NY 1001</p>
                     </div>
-                    <div className="p-5 w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
+                    <div className="p-5 w-full md:w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
                         <FaPhoneAlt className="text-5xl text-[#89D8E3] mb-2" />
                         <p className="text-xl font-bold">Phone number</p>
                         <p>+91-9212321321</p>
                     </div>
-                    <div className="p-5 w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
+                    <div className="p-5 w-full md:w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
                         <FaFax className="text-5xl text-[#89D8E3]
                         mb-2" />
                         <p className="text-xl font-bold">Fax</p>
                         <p>portfolio3@gmail.com</p>
                     </div>
-                    <div className="p-5 w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
+                    <div className="p-5 w-full md:w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
                         <MdEmail className="text-5xl text-[#89D8E3] mb-2" />
                         <p className="text-xl font-bold">Email</p>
                         <p>portfolio3@gmail.com</p>
@@ -48,8 +48,8 @@ const Contact = () => {
                         placeholder="Enter a valid email address"
                         className="w-full p-2 mb-4 rounded-md"
                     />
-                    <textarea name="messege" id="" cols="30" rows="12"></textarea>
-                    <button className="inline-block border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black transition duration-300 ease-in-out">
+                    <textarea className="p-2" name="messege"  placeholder="Write Your Message here..." id="" cols="30" rows="11"></textarea>
+                    <button className="inline-block border border-white text-white py-2 px-4 rounded hover:bg-white hover:text-black transition duration-700 ease-in-out font-bold ">
                         SUBMIT
                     </button>
                 </div>

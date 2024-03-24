@@ -29,17 +29,17 @@ const Hero = () => {
 
                     {/* dsc of user */}
                     <div className="mt-6">
-                        <button className="bg-[#2f9fae] text-white px-4 py-2 rounded-md hover:bg-[#183033] focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50">
+                        <button className="bg-primary text-white px-4 py-2 rounded-md hover:bg-[#183033] focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50">
                             DOWNLOAD CV
                         </button>
                         <div className="flex items-center mt-4">
-                            <div className="w-8 h-8 bg-[#2e8d99] rounded-full flex items-center justify-center">
+                            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                                 
                             </div>
                             <p className="ml-2 text-gray-600 dark:text-gray-300">{heroData?.exp_year} YEARS OF EXPERIENCE</p>
                         </div>
                         <div className="flex items-center mt-2">
-                            <div className="w-8 h-8 bg-[#2e8d99] rounded-full flex items-center justify-center">
+                            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                                 
                             </div>
                             <p className="ml-2 text-gray-600 dark:text-gray-300">{heroData?.some_total} COMPLETED PROJECTS</p>

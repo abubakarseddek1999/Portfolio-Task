@@ -40,7 +40,7 @@ const Testimonials = () => {
                 modules={[Pagination, Autoplay]}
                 className="mySwiper"
             >
-                {heroData?.map(item => <SwiperSlide key={item.id}><Testimonial item={item}></Testimonial> </SwiperSlide>)}
+                {heroData?.map(item => <SwiperSlide className='rounded-2xl' key={item.id}><Testimonial item={item}></Testimonial> </SwiperSlide>)}
 
 
             </Swiper>
