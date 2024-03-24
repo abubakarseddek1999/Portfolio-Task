@@ -11,7 +11,7 @@ const Hero = () => {
             .then(data => setHeroData(data?.user?.about))
     }, [])
 
-    console.log(heroData);
+    // console.log(heroData);
     return (
 
         <div className=" flex justify-between flex-col md:flex-row mt-10 p-2 ">

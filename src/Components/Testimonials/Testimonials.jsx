@@ -22,26 +22,29 @@ const Testimonials = () => {
             .then(res => res.json())
             .then(data => setHeroData(data?.user?.testimonials))
     }, [])
-    console.log(heroData);
+    // console.log(heroData);
     return (
+        <>
+        <h2 className='text-2xl md:text-4xl font-bold text-center uppercase'>Testimonials</h2>
+        <p className='text-center mb-10'>What <span className='italic'>Customers Say</span></p>
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination, Autoplay]}
+                className="mySwiper"
+            >
+                {heroData?.map(item => <SwiperSlide key={item.id}><Testimonial item={item}></Testimonial> </SwiperSlide>)}
 
-        <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-            }}
-            pagination={{
-                clickable: true,
-            }}
-            modules={[Pagination, Autoplay]}
-            className="mySwiper"
-        >
-            {heroData?.map(item =>  <SwiperSlide key={item.id}><Testimonial item={item}></Testimonial> </SwiperSlide> )}
-           
-            
-        </Swiper>
+
+            </Swiper>
+        </>
     );
 };
 
