@@ -14,7 +14,7 @@ const Hero = () => {
     // console.log(heroData);
     return (
 
-        <div className=" flex justify-between flex-col md:flex-row mt-10 p-2 ">
+        <div className=" flex justify-between flex-col md:flex-row  p-2 ">
             
             <div className="md:w-1/2 w-full flex flex-col justify-center items-center">
 

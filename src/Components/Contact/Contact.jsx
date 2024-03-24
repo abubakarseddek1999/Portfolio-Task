@@ -6,6 +6,10 @@ import { FaFax } from "react-icons/fa";
 const Contact = () => {
     return (
         <div className="mt-16 ">
+            {/* section title */}
+            <h2 className="text-3xl md:text-4xl text-center font-bold">Contact me</h2>
+            <p className="text-center text-xl">My <span className="italic">Talent</span></p>
+            {/* Contact info */}
             <div className="flex flex-col lg:flex-row gap-5 p-2 justify-center items-center">
                 <div className="p-2 grid grid-cols-2 gap-10  ">
                     <div className="p-5 w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md ">
@@ -16,23 +20,23 @@ const Contact = () => {
                     <div className="p-5 w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
                         <FaPhoneAlt className="text-5xl text-[#89D8E3] mb-2" />
                         <p className="text-xl font-bold">Phone number</p>
-                        <p>Hello@gmail.com</p>
+                        <p>+91-9212321321</p>
                     </div>
                     <div className="p-5 w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
                         <FaFax className="text-5xl text-[#89D8E3]
                         mb-2" />
                         <p className="text-xl font-bold">Fax</p>
-                        <p>Hello@gmail.com</p>
+                        <p>portfolio3@gmail.com</p>
                     </div>
                     <div className="p-5 w-[250px] h-[250px] flex flex-col justify-center items-center bg-slate-400 rounded-md">
-                        <MdEmail className="text-5xl text-[#89D8E3] mb-2"/>
+                        <MdEmail className="text-5xl text-[#89D8E3] mb-2" />
                         <p className="text-xl font-bold">Email</p>
-                        <p>Hello@gmail.com</p>
+                        <p>portfolio3@gmail.com</p>
                     </div>
 
                 </div>
 
-                <div className="p-7 rounded-lg flex flex-col gap-2 w-full lg:w-1/2 bg-[#89D8E3]">
+                <div className="p-7 rounded-lg flex flex-col gap-2 w-full lg:w-1/2 bg-gradient-to-tr from-[#ac50ef] via-[#7059fb] to-[#23668a]">
                     <h2 className="text-4xl font-bold mb-4 text-center">Contact Us</h2>
                     <input
                         type="text"

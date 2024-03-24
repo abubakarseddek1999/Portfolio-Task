@@ -15,8 +15,8 @@ const Timeline = () => {
     const educationData = timelineData.filter(item => item.forEducation)
     // experience data filter
     const experienceData = timelineData.filter(item => !item.forEducation)
-    console.log("educationData",educationData);
-    console.log("experienceData",experienceData);
+    console.log("educationData", educationData);
+    console.log("experienceData", experienceData);
 
     const [activeIndex, setActiveIndex] = useState(null);
     const toggleAccordion = (index) => {
@@ -35,11 +35,12 @@ const Timeline = () => {
         <div className="my-16 p-5">
             <h2 className="text-5xl text-center uppercase  font-bold ">Timeline</h2>
             <p className='text-xl italic text-center mb-10'>My Story</p>
-            
-            <div className='flex justify-between gap-5'>
+
+            <div className='flex flex-col md:flex-row justify-between gap-5'>
+
+                {/* Education info */}
                 <div>
-                    <p className='text-3xl font-bold text-center m-5'>Education</p>
-                    {/* Education info */}
+                    <p className='text-2xl md:text-3xl font-bold text-center m-5'>Education</p>
                     <div className="grid gap-4">
                         {educationData?.map((item, index) => (
                             <div key={index} className="bg-white  rounded-md overflow-hidden shadow-md ">
@@ -61,12 +62,12 @@ const Timeline = () => {
                                         <div className='mb-5'>
                                             <p>{item?.summary}</p>
                                         </div>
-                                        
+
                                         <div>
                                             <ul className='list-disc'>
                                                 {
                                                     item?.bulletPoints
-                                                    ?.map(item =>  <li key={item.id}>{item}</li>)
+                                                        ?.map(item => <li key={item.id}>{item}</li>)
                                                 }
                                             </ul>
                                         </div>
@@ -76,10 +77,10 @@ const Timeline = () => {
                         ))}
                     </div>
                 </div>
-                
-                 {/* Experience info*/}
+
+                {/* Experience info*/}
                 <div>
-                    <p className='text-3xl font-bold text-center m-5'>Experience</p>
+                    <p className='text-2xl md:text-3xl font-bold text-center m-5'>Experience</p>
                     <div className="grid gap-4">
                         {experienceData?.map((item, index) => (
                             <div key={index} className="bg-white  rounded-md overflow-hidden shadow-md ">
@@ -101,12 +102,12 @@ const Timeline = () => {
                                         <div className='mb-5'>
                                             <p>{item?.summary}</p>
                                         </div>
-                                        
+
                                         <div>
                                             <ul className='list-disc'>
                                                 {
                                                     item?.bulletPoints
-                                                    ?.map(item =>  <li key={item.id}>{item}</li>)
+                                                        ?.map(item => <li key={item.id}>{item}</li>)
                                                 }
                                             </ul>
                                         </div>
