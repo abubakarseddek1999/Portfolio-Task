@@ -10,7 +10,7 @@ const Testimonial = ({ item }) => {
             <div>
                 <p>1{item?.review}</p>
             </div>
-            <div className="">
+            <div>
                 <p className="text-xl font-bold">{item?.name}</p>
                 <p>{item?.position}</p>
             </div>
