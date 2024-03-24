@@ -4,7 +4,7 @@
 const Skill = ({item}) => {
     return (
         <div>
-             <div key={item.i} className="flex flex-col gap-5 p-5 rounded-lg m-5 bg-slate-500">
+             <div key={item.i} className="flex flex-col gap-5 p-5 rounded-lg m-5 bg-base-100 shadow-xl">
                         <div className="flex justify-between items-center mb-5">
                             <div className="flex justify-center items-center gap-2">
                                 {/* logo */}
@@ -12,7 +12,7 @@ const Skill = ({item}) => {
                                 <p className="text-xl font-bold">{item?.name}</p>
                             </div>
                             <div>
-                                <p className="text-xl font-bold"><span className="text-blue-800">{item?.percentage}</span> <span className="text-white">%</span></p>
+                                <p className="text-xl font-bold"><span className="text-blue-800">{item?.percentage}</span> <span className="">%</span></p>
                             </div>
 
                         </div>

@@ -14,7 +14,7 @@ const Hero = () => {
     // console.log(heroData);
     return (
 
-        <div className=" flex justify-between flex-col md:flex-row  p-2 ">
+        <div id="home" className=" flex justify-between flex-col md:flex-row  pt-16  ">
             
             <div className="md:w-1/2 w-full flex flex-col justify-center items-center">
 
@@ -25,16 +25,7 @@ const Hero = () => {
                     <p className="text-sm font-semibold">I am  <span className="italic">{heroData?.title}</span></p>
                     <p className="text-gray-600 dark:text-gray-300 mt-2">{heroData?.description}</p>
 
-                    {/* social link */}
-                    <div className="flex flex-row mt-5 gap-2">
-                        <img className="w-10 h-10 hover:gray-600" src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718250873-3038n7.webp" alt="" />
-                        <img className="w-10 h-10" src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718263294-2lfj67.webp" alt="" />
-                        <img className="w-10 h-10" src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1708718346601-xldm.webp" alt="" />
-
-
-
-
-                    </div>
+                 
 
                     {/* dsc of user */}
                     <div className="mt-6">

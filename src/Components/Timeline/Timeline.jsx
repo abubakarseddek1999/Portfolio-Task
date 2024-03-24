@@ -1,4 +1,3 @@
-import { list } from 'postcss';
 import React, { useState, useEffect } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
@@ -32,7 +31,7 @@ const Timeline = () => {
 
 
     return (
-        <div className="my-16 p-5">
+        <div id="timeline" className="my-16 p-5">
             <h2 className="text-5xl text-center uppercase  font-bold ">Timeline</h2>
             <p className='text-xl italic text-center mb-10'>My Story</p>
 

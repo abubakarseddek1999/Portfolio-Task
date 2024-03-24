@@ -12,15 +12,18 @@ const Skills = () => {
             .then(data => setSkillsData(data?.user?.skills))
     }, [])
 
+    // skills data filter
+    const filteredSkillsData = SkillsData?.filter(item => item.enabled)
+
     return (
-        <div>
+        <div id="skills">
             {/* section title */}
             <h2 className="text-3xl md:text-4xl text-center font-bold">Professtional skills</h2>
             <p className="text-center text-xl">My <span className="italic">Talent</span></p>
 
             {/* skills */}
             <div className="grid grid-cols-2 md:grid-cols-3">
-                {SkillsData?.map(item =>
+                {filteredSkillsData?.map(item =>
                    <Skill key={item.i} item={item}></Skill>
                 )}
             </div>

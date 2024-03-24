@@ -24,9 +24,9 @@ const Testimonials = () => {
     }, [])
     // console.log(heroData);
     return (
-        <>
-        <h2 className='text-2xl md:text-4xl font-bold text-center uppercase'>Testimonials</h2>
-        <p className='text-center mb-10'>What <span className='italic'>Customers Say</span></p>
+        <div id="testimonials">
+            <h2 className='text-2xl md:text-4xl font-bold text-center uppercase'>Testimonials</h2>
+            <p className='text-center mb-10'>What <span className='italic'>Customers Say</span></p>
             <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -44,7 +44,7 @@ const Testimonials = () => {
 
 
             </Swiper>
-        </>
+        </div>
     );
 };
 
