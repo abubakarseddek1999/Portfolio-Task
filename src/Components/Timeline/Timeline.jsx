@@ -35,6 +35,7 @@ const Timeline = () => {
         <div className="my-16 p-5">
             <h2 className="text-5xl text-center uppercase  font-bold ">Timeline</h2>
             <p className='text-xl italic text-center mb-10'>My Story</p>
+            
             <div className='flex justify-between gap-5'>
                 <div>
                     <p className='text-3xl font-bold text-center m-5'>Education</p>
