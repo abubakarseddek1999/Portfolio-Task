@@ -3,6 +3,7 @@ const About = () => {
     return (
         <div className="mt-10 border">
             <p className="text-3xl md:text-4xl font-bold text-center pt-2">About Me</p>
+            <p className="text-center italic text-xl">Exploring My Identity</p>
             <div className="flex flex-col md:flex-row p-5">
 
                 {/* image */}

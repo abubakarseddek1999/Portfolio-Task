@@ -31,10 +31,14 @@ const Skills = () => {
                 )}
             </div>
 
-            {/* Show More button */}
-            {!showAllSkills && filteredSkillsData?.length > 6 && (
+            {/* Show More/Show Less button */}
+            {filteredSkillsData?.length > 6 && (
                 <div className="flex justify-center mt-4">
-                    <button className="btn btn-primary" onClick={() => setShowAllSkills(true)}>Show More</button>
+                    {showAllSkills ? (
+                        <button className="btn btn-primary" onClick={() => setShowAllSkills(false)}>Show Less</button>
+                    ) : (
+                        <button className="btn btn-primary" onClick={() => setShowAllSkills(true)}>Show More</button>
+                    )}
                 </div>
             )}
         </div>
