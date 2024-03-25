@@ -11,7 +11,7 @@ const Services = () => {
             .then(data => setServiceData(data?.user?.services))
     }, [])
     return (
-        <div id="service">
+        <div id="service" className="mt-10">
             <h2 className="text-3xl md:text-3xl font-bold text-center">My Services</h2>
             <p className="text-center italic text-xl">Services Offered</p>
 

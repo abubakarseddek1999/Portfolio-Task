@@ -1,3 +1,4 @@
+import About from "../Components/About/About";
 import Contact from "../Components/Contact/Contact";
 import Hero from "../Components/Hero/Hero";
 // import Navbar from "../Components/Navbar/Navbar";
@@ -12,6 +13,7 @@ const Home = () => {
         <div className="max-w-[1400px] mx-auto">
             {/* <Navbar></Navbar> */}
             <Hero></Hero>
+            <About></About>
             <Services></Services>
             <Skills></Skills>
             <Timeline></Timeline>
