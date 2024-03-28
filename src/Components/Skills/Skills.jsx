@@ -35,9 +35,9 @@ const Skills = () => {
             {filteredSkillsData?.length > 6 && (
                 <div className="flex justify-center mt-4">
                     {showAllSkills ? (
-                        <button className="btn btn-primary" onClick={() => setShowAllSkills(false)}>Show Less</button>
+                        <button className="bg-primary hover:bg-blue-950 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 ... btn text-xl text-white mt-5"onClick={() => setShowAllSkills(false)}>Show Less</button>
                     ) : (
-                        <button className="btn btn-primary" onClick={() => setShowAllSkills(true)}>Show More</button>
+                        <button className="bg-primary hover:bg-blue-950 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 ... btn text-xl text-white mt-5"onClick={() => setShowAllSkills(true)}>Show More</button>
                     )}
                 </div>
             )}

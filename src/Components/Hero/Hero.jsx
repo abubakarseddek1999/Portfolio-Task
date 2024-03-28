@@ -50,7 +50,7 @@ const Hero = () => {
 
             {/* image  */}
             <div className="hidden md:flex justify-end w-1/2">
-                <img src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k" alt="John Doe" className="w-full h-full object-cove p-2 md:rounded-full md:max-w-[550px]" />
+                <img src={heroData?.avatar?.url} alt="John Doe" className="w-full h-full object-cove p-2 md:rounded-full md:max-w-[550px]" />
             </div>
         </div>
 

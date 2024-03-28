@@ -9,13 +9,13 @@ const Timeline = () => {
             .then(res => res.json())
             .then(data => setTimelineData(data?.user?.timeline))
     }, [])
-    console.log(timelineData);
+    // console.log(timelineData);
     // Education data filter
     const educationData = timelineData.filter(item => item.forEducation)
     // experience data filter
     const experienceData = timelineData.filter(item => !item.forEducation)
-    console.log("educationData", educationData);
-    console.log("experienceData", experienceData);
+    // console.log("educationData", educationData);
+    // console.log("experienceData", experienceData);
 
     const [activeIndex, setActiveIndex] = useState(null);
     const toggleAccordion = (index) => {
