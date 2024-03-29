@@ -1,8 +1,17 @@
-# React + Vite
+# The portfolio website
+- Introduction
+Welcome to ThePortfolyo Dynamic Portfolio project! This project aims to create stunning, responsive portfolio websites with dynamic content integration using React.js or Next.js. This README file serves as a guide to understand the project structure, setup instructions, implementation details, and additional notes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Setup Instructions
+- Clone the repository from GitHub.
+- Install dependencies using npm install.
+- project run using `npm run dev``
 
-Currently, two official plugins are available:
+# Technologies Used
+- React.js or Next.js
+- Libraries for animations (AOS, SwiperJS)
+- This project emphasizes dynamic content integration from an API endpoint.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Project live link:
+- https://portfolio-task.surge.sh/
+
