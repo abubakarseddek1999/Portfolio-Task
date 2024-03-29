@@ -64,8 +64,8 @@ const Projects = () => {
 
             {/* Modal */}
             {isModalOpen && selectedProject && (
-                <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-white p-8 m-3 rounded-lg max-w-4xl relative">
+                <div className="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center mt-2">
+                    <div className="bg-white p-8 m-3 rounded-lg max-w-2xl relative">
                         <div className="flex justify-end">
                             <p className=" btn text-2xl pr-5 cursor-pointer" onClick={closeModal}>X</p>
                         </div>
